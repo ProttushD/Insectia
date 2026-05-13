@@ -1,0 +1,310 @@
+
+@font-face {
+    font-family:main-font;
+    src: url(./fonts/Baskervville-Italic.ttf);
+}
+
+@font-face {
+    font-family: logo-font;
+    src: url(./fonts/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: second-main-font;
+    src: url(./fonts/Baskervville-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:second-main-font !;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    position: absolute;
+    
+}
+
+.nav .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav .left .logo{
+    width: 50%;
+
+}
+
+.nav .left .logo h5{
+    font-family: logo-font;
+    font-size: 35px;
+    color: #163932;
+}
+
+.nav .left .search{
+     display: flex;
+    background-color: rgb(211 210 210);
+    width: 200px;
+    padding: 10px 5px;
+    border-radius: 20px;
+        align-items: center;
+        gap: 20px;
+
+}
+
+.nav .left .search i{
+    font-size: 17px;
+}
+
+.nav .left .search h5{
+    font-size: 15px;
+    font-family: logo-font;
+}
+
+.nav .right{
+     width: 50%;
+     display: flex;
+     justify-content: space-evenly;
+     color: #fff;
+     
+}
+
+.nav .right h5{
+ font-size: 15px;
+ font-family: logo-font;
+
+}
+
+.nav .right h5:hover{
+     cursor: pointer;
+     color: darkblue;
+}
+
+.insect{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.insect img{
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.insect .left{
+    width: 50%;
+    height: 100%;
+    background-color: #ebe9e9;
+    display: flex;
+}
+
+
+.insect .left .title{
+    width: 30%;
+    height: 100%;
+        justify-items: baseline;
+        padding: 50% 0;
+}
+
+
+.insect .left .title h5{
+    font-size: 60px;
+    transform: rotate(-90deg);
+    font-family:main-font;
+}
+
+
+.insect .left .detail{
+    width: 70%;
+    height: 100%;
+    padding: 28% 0 0 10%;
+}
+
+.insect .left .detail .card {
+    width: 100%;
+    height: 100%;
+}
+
+.insect .left .detail .card .cards{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+
+.insect .left .detail .card .cards .dot {
+    align-items: center;
+}
+
+
+.insect .left .detail .card .cards .dot i{
+    font-size: 8px;
+    margin-right: 15px;
+    color: #b6352b;
+}
+
+.insect .left .detail .card .cards .content h5{
+font-size: 20px;
+font-family:logo-font;
+}
+
+.insect .left .detail .card .cards .content{
+    width: 35%;
+
+}
+
+.insect .left .detail .card .cards .content p{
+    border-bottom: 1px solid rgb(185, 185, 185);
+    font-family:logo-font;
+    color: #b6352b;
+}
+
+
+.insect .right{
+    width: 50%;
+    height: 100%;
+    background-color: #b6352b;
+    padding: 10% 10% 5% 15%;
+}
+
+
+.insect .right .insect-name{
+    width: 100%;
+        padding: 0 15%;
+
+    
+}
+
+.insect .right .insect-name h5{
+    font-size: 60px;
+    color: #ddbe8a;
+}
+
+.insect .right .insect-chart{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    
+}
+
+
+.insect .right .insect-chart .insect-img{
+    width: 50%;
+    border-right: 1px solid #ddbe8a;
+        text-align: center;
+}
+
+.insect .right .insect-chart .insect-img img{
+    all:unset;
+    width:80px;
+
+}
+
+.insect .right .insect-chart .insect-img h5{
+   font-family:main-logo;
+   color: #ddbe8a;
+   font-size: 15px;
+}
+
+
+
+.insect .right .insect-chart .insect-size{
+    padding: 5%;
+}
+
+.insect .right .insect-chart .insect-size .ins-size{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.insect .right .insect-chart .insect-size .ins-size .ins-logo i{
+    font-size: 25px;
+    color: #ddbe8a;
+    margin-right: 10px;
+}
+
+
+
+.insect .right .insect-chart .insect-size .ins-size .ins-det h5,p{
+font-size: 15px;
+ color: #ddbe8a;
+}
+
+
+.insect .right .insect-price{
+    width: 100%;
+        padding: 0 30px;
+}
+
+.insect .right .insect-price h5{
+    font-size: 45px;
+    font-family:logo-font;
+    color: #ddbe8a;
+    margin-bottom: 20px;
+}
+
+
+.insect .right .insect-price .insect-log {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.insect .right .insect-price .insect-log .toggle{
+    display: flex;
+}
+
+.insect .right .insect-price .insect-log .toggle i{
+    color: #ddbe8a;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.insect .right .insect-price .insect-log .toggle .dot{
+    color: #ddbe8a;
+    font-size: 25px;
+}
+
+.insect .right .insect-price .insect-button{
+    width: 300px;
+    background-color: #ddbe8a;
+   text-align: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family:logo-font;
+    font-weight: 700;
+}
+
+.insect .right .insect-price .insect-button:hover{
+    background-color: #ffffff;
+    color: #b6352b;
+    border: 1px solid #ddbe8a;
+    cursor: pointer;
+    transition: ease-in;
+}
